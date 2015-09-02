@@ -8,6 +8,10 @@
 return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
+        'DoctrineModule',
+        'DoctrineORMModule',
+        'TSS\Bootstrap',
+        'TSS\Auth',
         'Application',
     ),
 

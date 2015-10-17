@@ -1,25 +1,28 @@
 <?php
 
-/**
- * Coolcsn Zend Framework 2 Authorization Module
- *
- * @link https://github.com/coolcsn/CsnAuthorization for the canonical source repository
- * @copyright Copyright (c) 2005-2013 LightSoft 2005 Ltd. Bulgaria
- * @license https://github.com/coolcsn/CsnAuthorization/blob/master/LICENSE BSDLicense
- * @author Stoyan Cheresharov <stoyan@coolcsn.com>, Stoyan Revov <st.revov@gmail.com>
- */
 return [
     'tss' => [
         'auth' => [
+            'layout' => 'tss/auth/layout/default',
+            'template' => [
+                'signin' => 'tss/auth/signin',
+                'signup' => 'tss/auth/signup',
+            ],
             'routes' => [
                 'redirect' => [
                     'name' => 'home'
                 ],
+                'authenticate' => [
+                    'name' => 'auth/authenticate'
+                ],
                 'signin' => [
                     'name' => 'auth/signin'
                 ],
-                'authenticate' => [
-                    'name' => 'auth/authenticate'
+                'signout' => [
+                    'name' => 'auth/signout'
+                ],
+                'signup' => [
+                    'name' => 'auth/signup'
                 ],
             ],
 
@@ -28,34 +31,30 @@ return [
                 'default_role' => 'Guest',
                 'roles' => [
                     'Guest' => null,
-                    'Usuario' => ['Guest'],
-                    'Cliente' => ['Usuario'],
-                    'Funcionario' => ['Usuario'],
-                    'Gerente' => ['Funcionario'],
-                    'Admin' => ['Usuario'],
+                    'Member' => ['Guest'],
+                    'Admin' => ['Member'],
                 ],
                 'resources' => [
                     'allow' => [
+                        'Application\Controller\Account' => [
+                            '' => ['Member']
+                        ],
                         'Application\Controller\Index' => [
-                            '' => ['Usuario']
+                            '' => ['Member']
+                        ],
+                        'Application\Controller\Chats' => [
+                            '' => ['Member']
                         ],
                         'TSS\Auth\Controller\Auth' => [
                             'authenticate' => ['Guest'],
                             'signin' => ['Guest'],
-                            'email-nova-senha' => ['Guest'],
-                            'index' => ['Usuario'],
-                            'mudar-senha' => ['Usuario'],
-                            'nova-senha' => ['Guest'],
-                            'perfil' => ['Usuario'],
-                            'recuperar-senha' => ['Guest'],
-                            'sair' => ['Usuario'],
+                            'signout' => ['Guest'],
+                            'signup' => ['Guest'],
                         ],
                     ],
                     'deny' => [
-                        'Application\Controller\Conta' => [
-                            'nova-senha' => ['Usuario'],
-                            'email-nova-senha' => ['Usuario'],
-                            'recuperar-senha' => ['Usuario'],
+                        'TSS\Auth\Controller\Auth' => [
+                            'signup' => ['Member'],
                         ],
                     ]
                 ]

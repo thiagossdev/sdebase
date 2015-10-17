@@ -9,8 +9,11 @@ html, body {
     text-rendering: optimizeLegibility;
 }
 body {
-    padding-top: 50px;
     background-color: #f8f8f8;
+}
+
+.signin-img {
+    margin: 15% 0 15px 0;
 }
 
 .singin-form {
@@ -54,6 +57,17 @@ body {
 
 .singin-logo:hover {
     opacity: 0.5;
+}
+
+.singin-fadeIn {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .box {

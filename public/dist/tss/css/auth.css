@@ -103,3 +103,7 @@ body {
     position: relative;
     top: -11px;
 }
+
+div.row > div > div.checkbox {
+    margin-top: 0;
+}

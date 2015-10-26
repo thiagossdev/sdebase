@@ -62,12 +62,17 @@ return array(
         ),
     ),
     'translator' => array(
-        'locale' => 'en_US',
+        'locale' => 'pt_BR',
         'translation_file_patterns' => array(
             array(
                 'type'     => 'gettext',
                 'base_dir' => __DIR__ . '/../language',
                 'pattern'  => '%s.mo',
+            ),
+            array(
+                'type'     => 'phpArray',
+                'base_dir' => __DIR__ . '/../../../vendor/zendframework/zend-i18n-resources/languages/',
+                'pattern'  => '%s/Zend_Validate.php',
             ),
         ),
     ),

@@ -19,6 +19,9 @@ class Module
         $eventManager        = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
+
+        $translator = $e->getApplication()->getServiceManager()->get('translator');
+        \Zend\Validator\AbstractValidator::setDefaultTranslator($translator);
     }
 
     public function getConfig()

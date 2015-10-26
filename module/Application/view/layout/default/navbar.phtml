@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><span><img src="<?php echo $this->basePath('img/brand.png') ?>" alt="TSS"/></span>&nbsp;<?php echo $this->translate('TSS Application') ?></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <?php echo $this->navigation('navigation')->menu()->setUlClass('nav navbar-nav navbar-right')->escapeLabels(false); ?>
+        </div>
+    </div>
+</nav>

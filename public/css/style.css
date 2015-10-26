@@ -1,6 +1,12 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     padding-top: 60px;
-    padding-bottom: 40px;
+    /* Margin bottom by footer height */
+    margin-bottom: 50px;
 }
 
 .zf-green {
@@ -34,4 +40,15 @@ div.container a.brand {
     background: url("../img/zf2-logo.png") no-repeat scroll 0 10px transparent;
     margin-left: 0;
     padding: 8px 20px 12px 40px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    padding: 15px 0;
+    border-top: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
 }

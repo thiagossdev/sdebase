@@ -10,7 +10,7 @@ $this->headMeta()
     ->prependHttpEquiv('X-UA-Compatible', 'IE=edge');
 
 $this->headLink()
-    ->prependStylesheet($this->basePath() . '/dist/tss/css/auth.css')
+    ->prependStylesheet($this->basePath() . '/css/style.css')
     ->prependStylesheet($this->basePath() . '/css/animate.min.css')
     ->prependStylesheet($this->basePath() . '/css/font-awesome/css/font-awesome.min.css')
     ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css');
@@ -24,19 +24,11 @@ $this->headScript()
     <meta charset="utf-8">
     <?php echo $this->headMeta(); ?>
 
-    <?php echo $this->headTitle($this->translate('TSS'))->setSeparator(' – ')->setAutoEscape(false) ?>
-
-    <!-- Import google fonts - Heading first/ text second -->
-    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700'/>
-    <!--[if lt IE 9]>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css"/>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet" type="text/css"/>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css"/>
-    <![endif]-->
+    <?php echo $this->headTitle($this->translate('TSS Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
 
     <!-- Le styles -->
     <?php echo $this->headLink(); ?>
-    <?php echo $this->headStyle(); ?>
+    <?php echo $this->headStyle() ?>
 
     <!-- Fav and touch icons -->
     <link rel="icon" href="<?php echo $this->basePath() . '/img/favicon.ico'; ?>" type="image/png">
@@ -48,16 +40,26 @@ $this->headScript()
     <script type="text/javascript" src="<?php echo $this->basePath() . '/js/respond.min.js'; ?>"></script>
     <![endif]-->
 </head>
-<body >
+<body>
+    <!-- Start Navbar-->
+    <?php echo $this->render('layout/default/navbar'); ?>
+    <!-- End Navbar-->
+
+    <!-- Start FlashMesseger-->
+    <div class="container">
+        <?php echo $this->tssFlashMessenger()->render(); ?>
+    </div>
+    <!-- End FlashMesseger-->
+
     <!-- Start Content-->
-    <div class="container singin-fadeIn animated fadeInDown">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                <?php echo $this->content; ?>
-            </div>
-        </div>
+    <div class="container">
+        <?php echo $this->content; ?>
     </div>
     <!-- End Content-->
+
+    <!-- Start Footer-->
+    <?php echo $this->render('layout/default/footer'); ?>
+    <!-- End Footer-->
 
     <!-- Javascripts -->
     <!-- Important javascript libs(put in all pages) -->

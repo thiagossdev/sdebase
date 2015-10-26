@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: TSS Task Flow\n"
-"POT-Creation-Date: 2015-10-24 16:54-0300\n"
-"PO-Revision-Date: 2015-10-24 16:54-0300\n"
+"Project-Id-Version: TSS\n"
+"POT-Creation-Date: 2015-10-26 18:49-0300\n"
+"PO-Revision-Date: 2015-10-26 19:13-0300\n"
 "Last-Translator: Thiago S. Santos <thiagos.xsantos@gmail.com>\n"
 "Language-Team: Thiago S. Santos <thiagos.xsantos@gmail.com>\n"
 "Language: pt_BR\n"
@@ -11,17 +11,88 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.6\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;translate\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-SearchPath-0: ../..\n"
+"X-Poedit-SearchPath-0: module\n"
+"X-Poedit-SearchPath-1: config\n"
+"X-Poedit-SearchPathExcluded-0: vendor\n"
+"X-Poedit-SearchPathExcluded-1: data\n"
 
-#: ../../Application/view/application/index/index.phtml:2
+#: config/autoload/navigation.global.php:7
+#: module/Application/view/tss/auth/signin.phtml:8
+#: module/Application/view/tss/auth/signup.phtml:8
+msgid "Home"
+msgstr "Início"
+
+#: config/autoload/navigation.global.php:13
+msgid "Sign out"
+msgstr "Sair"
+
+#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:76
+msgid "Sign in with success!"
+msgstr "Entrou com sucesso!"
+
+#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:80
+msgid "Username or password is invalid."
+msgstr "Nome de usuário ou senha inválida."
+
+#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:98
+msgid "You're disconected!"
+msgstr "Você foi desconectado!"
+
+#: module/TSS/Auth/src/TSS/Auth/Filter/SignupFilter.php:52
+#, php-format
+msgid "The username %s already exists"
+msgstr "O nome de usuário %s já existe"
+
+#: module/TSS/Auth/src/TSS/Auth/Filter/SignupFilter.php:97
+msgid "You must agree to the terms of use."
+msgstr "Você deve concordar com os termos de uso."
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:30
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:33
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:40
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:43
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:46
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:53
+msgid "Password"
+msgstr "Senha"
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:55
+msgid "Remember-me"
+msgstr "Lembrar-me"
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:65
+msgid "Sign me in"
+msgstr "Conecte-me"
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:66
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:69
+msgid "Confirm Password"
+msgstr "Repita a Senha"
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:78
+msgid "I have read and accepted the terms of use."
+msgstr "Eu li e aceito os termos de uso."
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:88
+msgid "Sign me up"
+msgstr "Registe-me"
+
+#: module/TSS/Auth/src/TSS/Auth/Module.php:185
+msgid "Please, sign in."
+msgstr "Por favor, faça o login."
+
+#: module/Application/view/application/index/index.phtml:2
 #, php-format
 msgid "Welcome to %sZend Framework 2%s"
 msgstr "Bem-vindo ao %s Zend Framework %s"
 
-#: ../../Application/view/application/index/index.phtml:3
+#: module/Application/view/application/index/index.phtml:3
 #, php-format
 msgid ""
 "Congratulations! You have successfully installed the %sZF2 Skeleton "
@@ -33,15 +104,15 @@ msgstr ""
 "atualmente em execução Zend Framework %s Este esqueleto pode servir como um "
 "ponto de partida simples para você começar a construir seu aplicativo em ZF2."
 
-#: ../../Application/view/application/index/index.phtml:4
+#: module/Application/view/application/index/index.phtml:4
 msgid "Fork Zend Framework 2 on GitHub"
 msgstr "Fork Zend Framework 2 no GitHub"
 
-#: ../../Application/view/application/index/index.phtml:12
+#: module/Application/view/application/index/index.phtml:12
 msgid "Follow Development"
 msgstr "Siga Desenvolvimento"
 
-#: ../../Application/view/application/index/index.phtml:15
+#: module/Application/view/application/index/index.phtml:15
 #, php-format
 msgid ""
 "Zend Framework 2 is under active development. If you are interested in "
@@ -56,15 +127,15 @@ msgstr ""
 "%s e muito mais. Este é um grande recurso para manter-se atualizado com os "
 "últimos desenvolvimentos!"
 
-#: ../../Application/view/application/index/index.phtml:16
+#: module/Application/view/application/index/index.phtml:16
 msgid "ZF2 Development Portal"
 msgstr "Portal Desenvolvimento ZF2"
 
-#: ../../Application/view/application/index/index.phtml:24
+#: module/Application/view/application/index/index.phtml:24
 msgid "Discover Modules"
 msgstr "Descubra Módulos"
 
-#: ../../Application/view/application/index/index.phtml:27
+#: module/Application/view/application/index/index.phtml:27
 #, php-format
 msgid ""
 "The community is working on developing a community site to serve as a "
@@ -77,15 +148,15 @@ msgstr ""
 "%s no %s O site está vivo e atualmente contém uma lista de alguns dos "
 "módulos já disponíveis para ZF2."
 
-#: ../../Application/view/application/index/index.phtml:28
+#: module/Application/view/application/index/index.phtml:28
 msgid "Explore ZF2 Modules"
 msgstr "Explorar Módulos ZF2"
 
-#: ../../Application/view/application/index/index.phtml:36
+#: module/Application/view/application/index/index.phtml:36
 msgid "Help &amp; Support"
-msgstr "Ajuda & amp; Suporte"
+msgstr "Ajuda &amp; Suporte"
 
-#: ../../Application/view/application/index/index.phtml:39
+#: module/Application/view/application/index/index.phtml:39
 #, php-format
 msgid ""
 "If you need any help or support while developing with ZF2, you may reach us "
@@ -99,161 +170,120 @@ msgstr ""
 "beta. Alternativamente, você pode se inscrever e enviar perguntas para %s "
 "listas de %s"
 
-#: ../../Application/view/application/index/index.phtml:40
+#: module/Application/view/application/index/index.phtml:40
 msgid "Ping us on IRC"
 msgstr "Executar ping-nos no IRC"
 
-#: ../../Application/view/error/404.phtml:1
+#: module/Application/view/error/404.phtml:1
 msgid "A 404 error occurred"
 msgstr "Ocorreu um erro de 404"
 
-#: ../../Application/view/error/404.phtml:10
+#: module/Application/view/error/404.phtml:10
 msgid "The requested controller was unable to dispatch the request."
 msgstr "O controlador solicitado não foi capaz de despachar o pedido."
 
-#: ../../Application/view/error/404.phtml:13
+#: module/Application/view/error/404.phtml:13
 msgid ""
 "The requested controller could not be mapped to an existing controller class."
 msgstr ""
 "O controlador solicitado não pode ser mapeado para uma classe de controlador "
 "existente."
 
-#: ../../Application/view/error/404.phtml:16
+#: module/Application/view/error/404.phtml:16
 msgid "The requested controller was not dispatchable."
 msgstr "O controlador solicitado não foi despachável."
 
-#: ../../Application/view/error/404.phtml:19
+#: module/Application/view/error/404.phtml:19
 msgid "The requested URL could not be matched by routing."
 msgstr "A URL solicitada não pode ser igualada por roteamento."
 
-#: ../../Application/view/error/404.phtml:22
+#: module/Application/view/error/404.phtml:22
 msgid "We cannot determine at this time why a 404 was generated."
 msgstr "Não podemos determinar neste momento porque um 404 foi gerado."
 
-#: ../../Application/view/error/404.phtml:34
+#: module/Application/view/error/404.phtml:34
 msgid "Controller"
 msgstr "Controlador"
 
-#: ../../Application/view/error/404.phtml:41
+#: module/Application/view/error/404.phtml:41
 #, php-format
 msgid "resolves to %s"
 msgstr "resolve %s"
 
-#: ../../Application/view/error/404.phtml:53
-#: ../../Application/view/error/index.phtml:8
+#: module/Application/view/error/404.phtml:53
+#: module/Application/view/error/index.phtml:8
 msgid "Additional information"
 msgstr "Informações adicionais"
 
-#: ../../Application/view/error/404.phtml:56
-#: ../../Application/view/error/404.phtml:81
-#: ../../Application/view/error/index.phtml:11
-#: ../../Application/view/error/index.phtml:36
+#: module/Application/view/error/404.phtml:56
+#: module/Application/view/error/404.phtml:81
+#: module/Application/view/error/index.phtml:11
+#: module/Application/view/error/index.phtml:36
 msgid "File"
 msgstr "Arquivo"
 
-#: ../../Application/view/error/404.phtml:60
-#: ../../Application/view/error/404.phtml:85
-#: ../../Application/view/error/index.phtml:15
-#: ../../Application/view/error/index.phtml:40
+#: module/Application/view/error/404.phtml:60
+#: module/Application/view/error/404.phtml:85
+#: module/Application/view/error/index.phtml:15
+#: module/Application/view/error/index.phtml:40
 msgid "Message"
 msgstr "Mensagem"
 
-#: ../../Application/view/error/404.phtml:64
-#: ../../Application/view/error/404.phtml:89
-#: ../../Application/view/error/index.phtml:19
-#: ../../Application/view/error/index.phtml:44
+#: module/Application/view/error/404.phtml:64
+#: module/Application/view/error/404.phtml:89
+#: module/Application/view/error/index.phtml:19
+#: module/Application/view/error/index.phtml:44
 msgid "Stack trace"
 msgstr "Stack trace"
 
-#: ../../Application/view/error/404.phtml:75
-#: ../../Application/view/error/index.phtml:30
+#: module/Application/view/error/404.phtml:75
+#: module/Application/view/error/index.phtml:30
 msgid "Previous exceptions"
 msgstr "Excepções anteriores"
 
-#: ../../Application/view/error/404.phtml:109
-#: ../../Application/view/error/index.phtml:64
+#: module/Application/view/error/404.phtml:109
+#: module/Application/view/error/index.phtml:64
 msgid "No Exception available"
 msgstr "Sem Excepção disponível"
 
-#: ../../Application/view/error/index.phtml:1
+#: module/Application/view/error/index.phtml:1
 msgid "An error occurred"
 msgstr "Ocorreu um erro"
 
-#: ../../Application/view/layout/layout.phtml:6
-#: ../../Application/view/layout/layout.phtml:36
+#: module/Application/view/layout/default/layout.phtml:27
+#: module/Application/view/layout/default/navbar.phtml:9
 msgid "TSS Application"
 msgstr "TSS Aplicação"
 
-#: ../../Application/view/layout/layout.phtml:40
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:8
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:8
-msgid "Home"
-msgstr "Início"
-
-#: ../../Application/view/layout/layout.phtml:41
-msgid "Sign out"
-msgstr "Sair"
-
-#: ../../Application/view/layout/layout.phtml:50
+#: module/Application/view/layout/default/layout.phtml:59
 msgid "All rights reserved."
 msgstr "Todos os direitos reservados."
 
-#: ../../TSS/Auth/view/tss/auth/layout/default.phtml:27
+#: module/Application/view/tss/auth/layout/default.phtml:27
 msgid "TSS"
 msgstr "TSS"
 
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:2
+#: module/Application/view/tss/auth/signin.phtml:2
 msgid "Sign in"
 msgstr "Entrar"
 
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:21
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:24
-msgid "Username"
-msgstr "Nome de usuário"
-
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:24
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:27
-msgid "Password"
-msgstr "Senha"
-
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:30
-msgid "Remember-me"
-msgstr "Lembrar-me"
-
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:35
+#: module/Application/view/tss/auth/signin.phtml:29
 msgid "Forgotten password"
 msgstr "Esqueceu a Senha"
 
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:44
-msgid "Sign me in"
-msgstr "Conecte-me"
-
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:47
+#: module/Application/view/tss/auth/signin.phtml:40
 msgid "Don't have an account?"
 msgstr "Ainda não possui uma conta?"
 
-#: ../../TSS/Auth/view/tss/auth/signin.phtml:49
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:2
+#: module/Application/view/tss/auth/signin.phtml:42
+#: module/Application/view/tss/auth/signup.phtml:2
 msgid "Sign up"
 msgstr "Inscreva-se"
 
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:30
-msgid "Password Confirm"
-msgstr ""
-
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:33
-msgid ""
-"I have read and accepted the terms of use.You must agree to the terms of use."
-msgstr ""
-
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:39
-msgid "Sign me up"
-msgstr ""
-
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:42
+#: module/Application/view/tss/auth/signup.phtml:32
 msgid "Already have an account?"
 msgstr "Já tem uma conta?"
 
-#: ../../TSS/Auth/view/tss/auth/signup.phtml:44
+#: module/Application/view/tss/auth/signup.phtml:34
 msgid "Please login"
-msgstr "Por favor, faça o login"
+msgstr "Por favor entre"

@@ -26,6 +26,14 @@ $this->headScript()
 
     <?php echo $this->headTitle($this->translate('TSS Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
 
+    <!-- Import google fonts - Heading first/ text second -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700'/>
+    <!--[if lt IE 9]>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+
     <!-- Le styles -->
     <?php echo $this->headLink(); ?>
     <?php echo $this->headStyle() ?>

@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     padding-top: 60px;
     /* Margin bottom by footer height */
     margin-bottom: 50px;

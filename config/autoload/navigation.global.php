@@ -6,8 +6,8 @@ return array(
             array(
                 'label' => _('Home'),
                 'route' => 'home',
-                'controller' => 'index',
-                'action' => 'index'
+                'resource' => 'Application\Controller\Index',
+                'privilege' => 'index',
             ),
             array(
                 'label' => _('Sign out'),

@@ -25,6 +25,20 @@ return [
                     'name' => 'auth/signup'
                 ],
             ],
+            'config' => [
+                'identityClass' => Application\Entity\User::class,
+                'identityProperty' => 'username',
+                'credentialClass' => Application\Entity\Credential::class,
+                'credentialProperty' => 'value',
+                'credentialIdentityProperty' => 'user',
+                'credential_callable' => function (Application\Entity\User $user, Application\Entity\Credential $credential) {
+                    if ($user->getId() == $credential->getUser()->getId() && $user->getStatus() == Application\Entity\User::STATUS_ACTIVE) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            ],
 
             'acl' => [
                 'use_database_storage' => false,

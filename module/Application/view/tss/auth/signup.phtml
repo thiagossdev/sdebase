@@ -31,7 +31,7 @@ $this->headTitle($title);
                 <div class="col-xs-6">
                     <div><?php echo $this->translate('Already have an account?'); ?></div>
 
-                    <strong><a href="<?php echo $this->url('auth/signin');?>"><?php echo $this->translate('Please login'); ?></a></strong>
+                    <strong><a href="<?php echo $this->url($authRoutes['signin']['name']);?>"><?php echo $this->translate('Please login'); ?></a></strong>
                 </div>
             </div>
         </fieldset>

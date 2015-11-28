@@ -52,13 +52,7 @@ return [
                 ],
                 'resources' => [
                     'allow' => [
-                        'Application\Controller\Account' => [
-                            '' => ['Member']
-                        ],
                         'Application\Controller\Index' => [
-                            '' => ['Member']
-                        ],
-                        'Application\Controller\Chats' => [
                             '' => ['Member']
                         ],
                         'TSS\Auth\Controller\Auth' => [

@@ -21,6 +21,9 @@ use TSS\Auth\Entity\AbstractUser;
  */
 class User extends AbstractUser
 {
+    const STATUS_INACTIVE = 1;
+    const STATUS_ACTIVE = 2;
+
     /**
      * @var Credential[]
      *

@@ -20,5 +20,11 @@ use TSS\Auth\Entity\AbstractRole;
  */
 class Role extends AbstractRole
 {
-
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->active = true;
+    }
 }

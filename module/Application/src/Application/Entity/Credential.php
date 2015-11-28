@@ -33,7 +33,7 @@ class Credential extends AbstractCredential
      */
     public function __construct()
     {
-
+        $this->active = true;
     }
 
     /**

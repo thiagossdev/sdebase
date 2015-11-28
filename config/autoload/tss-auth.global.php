@@ -32,12 +32,14 @@ return [
                 'credentialProperty' => 'value',
                 'credentialIdentityProperty' => 'user',
                 'credential_callable' => function (Application\Entity\User $user, Application\Entity\Credential $credential) {
-                    if ($user->getId() == $credential->getUser()->getId() && $user->getStatus() == Application\Entity\User::STATUS_ACTIVE) {
+                    if ($user->getId() == $credential->getUser()->getId() && $user->isActive()) {
                         return true;
                     } else {
                         return false;
                     }
-                }
+                },
+                'roleClass' => Application\Entity\Role::class,
+                'roleDefault' => 2,
             ],
 
             'acl' => [

@@ -60,12 +60,18 @@ return [
                         'Application\Controller\Index' => [
                             '' => ['Member']
                         ],
+                        'TSS\Auth\Controller\Account' => [
+                            '' => ['Member'],
+                        ],
                         'TSS\Auth\Controller\Auth' => [
                             'authenticate' => ['Guest'],
                             'confirm-email' => ['Guest'],
                             'signin' => ['Guest'],
                             'signout' => ['Guest'],
                             'signup' => ['Guest'],
+                        ],
+                        'TSS\Auth\Menu' => [
+                            'account' => ['Member']
                         ],
                     ],
                     'deny' => [

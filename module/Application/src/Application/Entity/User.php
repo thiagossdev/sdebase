@@ -47,6 +47,7 @@ class User extends AbstractUser
         $this->credentials = new ArrayCollection();
         $this->status = self::STATUS_ACTIVE;
         $this->active = true;
+        $this->confirmedEmail = false;
     }
 
     /**

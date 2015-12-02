@@ -11,7 +11,7 @@ return array(
             ),
             array(
                 'label' => _('Sign out'),
-                'route' => 'auth/signout',
+                'route' => 'tss\auth/signout',
                 'resource' => 'TSS\Auth\Controller\Auth',
                 'privilege' => 'signout',
             ),

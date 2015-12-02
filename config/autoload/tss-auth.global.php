@@ -13,16 +13,19 @@ return [
                     'name' => 'home'
                 ],
                 'authenticate' => [
-                    'name' => 'auth/authenticate'
+                    'name' => 'tss\auth/authenticate'
+                ],
+                'confirm-email' => [
+                    'name' => 'tss\auth/confirm-email'
                 ],
                 'signin' => [
-                    'name' => 'auth/signin'
+                    'name' => 'tss\auth/signin'
                 ],
                 'signout' => [
-                    'name' => 'auth/signout'
+                    'name' => 'tss\auth/signout'
                 ],
                 'signup' => [
-                    'name' => 'auth/signup'
+                    'name' => 'tss\auth/signup'
                 ],
             ],
             'config' => [
@@ -38,6 +41,8 @@ return [
                         return false;
                     }
                 },
+                'identityEmail' => 'email',
+                'identityActive' => false,
                 'roleClass' => Application\Entity\Role::class,
                 'roleDefault' => 2,
             ],
@@ -57,6 +62,7 @@ return [
                         ],
                         'TSS\Auth\Controller\Auth' => [
                             'authenticate' => ['Guest'],
+                            'confirm-email' => ['Guest'],
                             'signin' => ['Guest'],
                             'signout' => ['Guest'],
                             'signup' => ['Guest'],

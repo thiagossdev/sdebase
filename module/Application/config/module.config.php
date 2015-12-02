@@ -61,6 +61,21 @@ return array(
         ),
         'factories' => array(
             'translator' => 'Zend\Mvc\Service\TranslatorServiceFactory',
+            'mail.transport' => function ($sm) {
+                $config = $sm->get('config');
+                switch($config['mail']['options']['sender']) {
+                    case 'smtp':
+                        $transport = new \Zend\Mail\Transport\Smtp();
+                        $transport->setOptions(new \Zend\Mail\Transport\SmtpOptions($config['mail']['transport']['options']));
+                        break;
+                    case 'sendmail':
+                    default:
+                        $transport = new \Zend\Mail\Transport\Sendmail();
+                        break;
+                }
+
+                return $transport;
+            },
         ),
     ),
     'translator' => array(

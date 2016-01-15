@@ -1,0 +1,109 @@
+html, body {
+    width: 100%;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+*, header, footer, #wrapper {
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background-color: #f8f8f8;
+}
+
+.signin-img {
+    margin: 15% 0 15px 0;
+}
+
+.singin-form {
+    width: 385px;
+    margin: 0 auto;
+}
+
+.singin .container {
+    max-width: 450px;
+}
+
+@media (min-width: 490px) {
+    .singin-form {
+        width: 450px;
+    }
+}
+
+.singin-form .checkbox {
+    margin: 0px;
+}
+
+.singin-form .form-control:focus {
+    z-index: 2;
+}
+
+.singin-form #submit {
+    margin-top: 15px;
+}
+
+.centered {
+    width: 150px;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    margin: 0 auto;
+}
+
+.singin-logo {
+    margin: 1em 0 0.1em 0;
+    transition: 0.4s all;
+}
+
+.singin-logo:hover {
+    opacity: 0.5;
+}
+
+.singin-fadeIn {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.box {
+    background: #fff;
+    padding: 0.5em 0 0.5em 0;
+    margin: 1em 0 1em 0;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.separator {
+    border-right: 1px solid #e9e9ec;
+    padding: 0 20px 0 0;
+}
+
+.singin-box .separator {
+    border-top: 1px solid #dddddd;
+    height: 1px;
+    margin: 2.1em 0;
+    text-align: center;
+    clear: both;
+    position: relative;
+}
+
+.singin-box .separator p {
+    text-align: center;
+    background: white;
+    color: #79808b;
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -11px;
+}
+
+div.row > div > div.checkbox {
+    margin-top: 0;
+}

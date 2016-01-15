@@ -1,0 +1,74 @@
+<?php
+echo $this->doctype();
+
+$this->headMeta()
+    ->prependName('application-name', 'tss')
+    ->prependName('keywords', 'tss, responsive layout')
+    ->prependName('description', 'TSS')
+    ->prependName('author', 'Thiago S. Santos')
+    ->prependName('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1')
+    ->prependHttpEquiv('X-UA-Compatible', 'IE=edge');
+
+$this->headLink()
+    ->prependStylesheet($this->basePath() . '/dist/tss/css/auth.css')
+    ->prependStylesheet($this->basePath() . '/css/animate.min.css')
+    ->prependStylesheet($this->basePath() . '/css/font-awesome/css/font-awesome.min.css')
+    ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css');
+
+$this->headScript()
+    ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+?>
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->headMeta(); ?>
+
+    <?php echo $this->headTitle($this->translate('TSS'))->setSeparator(' – ')->setAutoEscape(false) ?>
+
+    <!-- Import google fonts - Heading first/ text second -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700'/>
+    <!--[if lt IE 9]>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <?php echo $this->headLink(); ?>
+    <?php echo $this->headStyle(); ?>
+
+    <!-- Fav and touch icons -->
+    <link rel="icon" href="<?php echo $this->basePath() . '/img/favicon.ico'; ?>" type="image/png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="<?php echo $this->basePath() . '/js/html5shiv.min.js'; ?>"></script>
+    <script type="text/javascript" src="<?php echo $this->basePath() . '/js/respond.min.js'; ?>"></script>
+    <![endif]-->
+</head>
+<body >
+    <!-- Start Content-->
+    <div class="container singin-fadeIn animated fadeInDown">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <?php echo $this->content; ?>
+            </div>
+        </div>
+    </div>
+    <!-- End Content-->
+
+    <!-- Javascripts -->
+    <!-- Important javascript libs(put in all pages) -->
+    <script type="text/javascript" src="<?php echo $this->basePath() . '/js/jquery.min.js'; ?>"></script>
+
+    <!-- Start Scripts -->
+    <?php echo $this->headScript() ?>
+    <!--  End Scripts-->
+
+    <!-- Start Inline Scripts-->
+    <?php echo $this->inlineScript() ?>
+    <!-- End Inline Scripts-->
+</body>
+</html>

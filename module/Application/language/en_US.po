@@ -1,0 +1,271 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TSS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-31 20:23-0300\n"
+"PO-Revision-Date: 2015-10-31 20:23-0300\n"
+"Last-Translator: Evan Coury <me@evancoury.com>\n"
+"Language-Team: Thiago S. Santos <thiagos.xsantos@gmail.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;translate\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: module\n"
+"X-Poedit-SearchPath-1: config\n"
+"X-Poedit-SearchPathExcluded-0: vendor\n"
+"X-Poedit-SearchPathExcluded-1: data\n"
+
+#: config/autoload/navigation.global.php:7
+#: module/Application/view/tss/auth/signin.phtml:8
+#: module/Application/view/tss/auth/signup.phtml:8
+msgid "Home"
+msgstr ""
+
+#: config/autoload/navigation.global.php:13
+msgid "Sign out"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:76
+msgid "Sign in with success!"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:80
+msgid "Username or password is invalid."
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:98
+msgid "You're disconected!"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Filter/SignupFilter.php:52
+#, php-format
+msgid "The username %s already exists"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Filter/SignupFilter.php:97
+msgid "You must agree to the terms of use."
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:30
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:33
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:40
+msgid "Username"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:43
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:46
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:53
+msgid "Password"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:55
+msgid "Remember-me"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:65
+msgid "Sign me in"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:66
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:69
+msgid "Confirm Password"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:78
+msgid "I have read and accepted the terms of use."
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:88
+msgid "Sign me up"
+msgstr ""
+
+#: module/TSS/Auth/src/TSS/Auth/Module.php:185
+msgid "Please, sign in."
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:2
+#, php-format
+msgid "Welcome to %sZend Framework 2%s"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:3
+#, php-format
+msgid ""
+"Congratulations! You have successfully installed the %sZF2 Skeleton "
+"Application%s. You are currently running Zend Framework version %s. This "
+"skeleton can serve as a simple starting point for you to begin building your "
+"application on ZF2."
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:4
+msgid "Fork Zend Framework 2 on GitHub"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:12
+msgid "Follow Development"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:15
+#, php-format
+msgid ""
+"Zend Framework 2 is under active development. If you are interested in "
+"following the development of ZF2, there is a special ZF2 portal on the "
+"official Zend Framework website which provides links to the ZF2 %swiki%s, "
+"%sdev blog%s, %sissue tracker%s, and much more. This is a great resource for "
+"staying up to date with the latest developments!"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:16
+msgid "ZF2 Development Portal"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:24
+msgid "Discover Modules"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:27
+#, php-format
+msgid ""
+"The community is working on developing a community site to serve as a "
+"repository and gallery for ZF2 modules. The project is available %son GitHub"
+"%s. The site is currently live and currently contains a list of some of the "
+"modules already available for ZF2."
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:28
+msgid "Explore ZF2 Modules"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:36
+msgid "Help &amp; Support"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:39
+#, php-format
+msgid ""
+"If you need any help or support while developing with ZF2, you may reach us "
+"via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+"feedback you may have regarding the beta releases. Alternatively, you may "
+"subscribe and post questions to the %smailing lists%s."
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:40
+msgid "Ping us on IRC"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:13
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:34
+msgid "Controller"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:53
+#: module/Application/view/error/index.phtml:8
+msgid "Additional information"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:56
+#: module/Application/view/error/404.phtml:81
+#: module/Application/view/error/index.phtml:11
+#: module/Application/view/error/index.phtml:36
+msgid "File"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:60
+#: module/Application/view/error/404.phtml:85
+#: module/Application/view/error/index.phtml:15
+#: module/Application/view/error/index.phtml:40
+msgid "Message"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:64
+#: module/Application/view/error/404.phtml:89
+#: module/Application/view/error/index.phtml:19
+#: module/Application/view/error/index.phtml:44
+msgid "Stack trace"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:75
+#: module/Application/view/error/index.phtml:30
+msgid "Previous exceptions"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:109
+#: module/Application/view/error/index.phtml:64
+msgid "No Exception available"
+msgstr ""
+
+#: module/Application/view/error/index.phtml:1
+msgid "An error occurred"
+msgstr ""
+
+#: module/Application/view/layout/default/footer.phtml:5
+msgid "All rights reserved."
+msgstr ""
+
+#: module/Application/view/layout/default/layout.phtml:27
+#: module/Application/view/layout/default/navbar.phtml:9
+msgid "TSS Application"
+msgstr ""
+
+#: module/Application/view/tss/auth/layout/default.phtml:27
+msgid "TSS"
+msgstr ""
+
+#: module/Application/view/tss/auth/signin.phtml:2
+msgid "Sign in"
+msgstr ""
+
+#: module/Application/view/tss/auth/signin.phtml:29
+msgid "Forgotten password"
+msgstr ""
+
+#: module/Application/view/tss/auth/signin.phtml:40
+msgid "Don't have an account?"
+msgstr ""
+
+#: module/Application/view/tss/auth/signin.phtml:42
+#: module/Application/view/tss/auth/signup.phtml:2
+msgid "Sign up"
+msgstr ""
+
+#: module/Application/view/tss/auth/signup.phtml:32
+msgid "Already have an account?"
+msgstr ""
+
+#: module/Application/view/tss/auth/signup.phtml:34
+msgid "Please login"
+msgstr ""

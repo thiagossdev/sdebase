@@ -1,0 +1,6 @@
+[submodule "module/TSS/Auth"]
+	path = module/TSS/Auth
+	url = git@bitbucket.org:thiagosxsantos/tss-auth.git
+[submodule "module/TSS/Bootstrap"]
+	path = module/TSS/Bootstrap
+	url = git@bitbucket.org:thiagosxsantos/tss-bootstrap.git
